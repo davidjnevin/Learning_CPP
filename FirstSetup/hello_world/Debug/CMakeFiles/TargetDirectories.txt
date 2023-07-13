@@ -1,0 +1,3 @@
+/Users/Communitymanager-work/Desktop/code/cpp_learning/FirstSetup/hello_world/Debug/CMakeFiles/Hello.dir
+/Users/Communitymanager-work/Desktop/code/cpp_learning/FirstSetup/hello_world/Debug/CMakeFiles/edit_cache.dir
+/Users/Communitymanager-work/Desktop/code/cpp_learning/FirstSetup/hello_world/Debug/CMakeFiles/rebuild_cache.dir
