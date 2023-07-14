@@ -1,0 +1,3 @@
+/Users/Communitymanager-work/Desktop/code/cpp_learning/cmake_tutorial/cmake-3.27.0-rc5-tutorial-source/Step1_build/CMakeFiles/Tutorial.dir
+/Users/Communitymanager-work/Desktop/code/cpp_learning/cmake_tutorial/cmake-3.27.0-rc5-tutorial-source/Step1_build/CMakeFiles/edit_cache.dir
+/Users/Communitymanager-work/Desktop/code/cpp_learning/cmake_tutorial/cmake-3.27.0-rc5-tutorial-source/Step1_build/CMakeFiles/rebuild_cache.dir
