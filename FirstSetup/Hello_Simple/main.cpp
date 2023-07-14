@@ -6,4 +6,3 @@ int main() {
 	Blah().sayBoo();
 	return 0;
 }
-
