@@ -1,16 +1,13 @@
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
 int main()
 {
-	float a;
+	float a = 0.1;
+	float b = 0.2;
+	float c = 0.3;
 
-	cin >> a;
-	a *= a;
-	a *= a;
-	a = sqrtf(a) * sqrtf(a);
-
-	cout << a;
+	if(a + b != c)
+		cout << "Your computer is out of order";
 }
