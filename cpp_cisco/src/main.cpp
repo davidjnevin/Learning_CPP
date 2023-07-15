@@ -1,31 +1,31 @@
-/* finding the largest of three numbers */
-
 #include <iostream>
+
 using namespace std;
 
 int main()
 {
-  /* the three numbers */
-  int number1, number2, number3;
+	/* we will count the numbers here */
+	int evens = 0, odds = 0;
 
-  /* read three numbers */
-  cin >> number1;
-  cin >> number2;
-  cin >> number3;
+	/* we will store the incoming numbers here */
+	int number;
 
-  /* we will save the larger number here */
-  /* we temporarily assume that the former number is the larger one */
-  /* we will check it soon */
-  int max = number1;
+	/* read first number */
+	cin >> number;
 
-  /* we check if the second value is the largest */
-  if (number2 > max)
-      max = number2;
-
-  /* we check if the third value is the largest */
-  if (number3 > max)
-      max = number3;
-
-  /* we print the result */
-  cout << "The largest number is " << max << endl;
+	/* 0 terminates execution */
+	while (number != 0) {
+		/* check if the number is odd */
+		if (number % 2 == 1)
+			/* increase „odd” counter */
+			odds++;
+		else
+			/* increase „even” counter */
+			evens++;
+		/* read next number */
+		cin >> number;
+	}
+	/* print results */
+	cout << "Even numbers: " << evens << endl;
+	cout << "Odd numbers: " << odds << endl;
 }
