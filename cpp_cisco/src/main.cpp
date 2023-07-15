@@ -4,18 +4,19 @@ using namespace std;
 
 int main()
 {
-    int number;
-    int max = -100000;
-    int counter = 0;
-    do {
-        cin >> number;
-        if (number != -1)
-            counter++;
-        if (number > max)
-            max = number;
-    } while (number != -1);
-    if (counter)
-        cout << "The largest number is " << max << endl;
-    else
-        cout << "Are you kidding? You haven't entered any number!" << endl;
+int x = 2;
+  int temp;
+    switch (x) {
+    case 1:
+        temp = 1;
+        break;
+    case 2:
+        temp = 2;
+        break;
+    default:
+        temp = 3;
+        break;
+    }
+  cout << "Value of temp is: "<< temp << endl;
+  return 0;
 }
