@@ -1,31 +1,38 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-void checkSum(int num1, int num2) {
-	int check = 0;
-	int result = num1 + num2;
-	if (result < 100) {
-		cout << "Comparing the value to 100" << endl;
+//define your function here
 
-		int check = 0;
-		cout << result << " is less than 100" << endl;
-	}
-	if (result > 100) {
+void computeCubes(int &num1, int &num2, int &num3)
+{
 
-		int check = 1;
-		cout << result << " is greater than 100" << endl;
-	}
-	if (result == 100) {
+        num1 = num1 * num1 * num1;
+        num2 = num2 * num2 * num2;
+        num3 = num3 * num3 * num3;
 
-		int check = 2;
-		cout << result << " is equal to 100" << endl;
-	}
 }
 
-int main() {
-	int num1, num2;
-	cin >> num1;
-	cin >> num2;
-	checkSum(num1, num2);
+
+string test(int num1, int num2, int num3){
+
+  string ans="";
+
+  //call computeCubes function here
+  computeCubes(num1,num2,num3);
+
+  cout<< "Value of num1 is: "<< num1 <<endl;
+  cout <<"Value of num2 is: " << num2 <<endl;
+  cout<<"Value of num3 is: "<< num3<<endl;
+
+  ans = to_string(num1) + " " +to_string(num2) + " " + to_string(num3);
+  cout <<"ans is: "<<ans;
+  return ans;
+}
+
+int main(){
+	int num1, num2, num3;
+	cin>>num1>>num2>>num3;
+	cout<<test(num1, num2, num3);
 	return 0;
 }
