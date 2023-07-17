@@ -10,6 +10,7 @@ set(SOURCES
 
 # Executable using the sources
 add_executable(PointersApp ${SOURCES})
+# add_executable(SortApp sort.cpp)
 
 # Libraries
 # target_link_libraries(TutorialApp PRIVATE your_library)

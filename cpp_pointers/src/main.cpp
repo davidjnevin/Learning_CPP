@@ -1,15 +1,21 @@
-#include <cmath>
 #include <iostream>
-int func(int number) {
+using namespace std;
 
- if (abs(number)/10 == 0) {
-   return 1;
- }
- else {
-   return 1 + func(number / 10);
- }
-}
 int main() {
-		int number = 86250;
-	std::cout << func(number);
+  int *ptr;      //creating a pointer named ptr
+  int num = 4;    //intilizaing an int type variable named num with value 4
+  cout << "The integer input is: " << num <<endl;
+  ptr = new int[num];  //using new to initialize the ptr array with size num and dynamically allocated memory in heap
+  cout << "Input " << num << " integers\n";
+  for (int i = 0; i < num; i++){
+    ptr[i] = i+1;   //assigning value i+1 to the index i of ptr array
+    cin >> ptr[i];  // we cin this value
+  }
+  cout << "Elements entered by you are\n";
+  for (int i = 0; i < num; i++){
+    cout << ptr[i] << endl;    //displaying the values that we passed through cin above
+  }
+  delete[] ptr;      // now that we are done using ptr, we delete the array
+                   // and free the part of memory which was allocated to it in the heap
+  return 0;
 }
