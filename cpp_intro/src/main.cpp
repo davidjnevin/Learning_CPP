@@ -11,5 +11,5 @@ int func(int number) {
 }
 int main() {
 		int number = 86250;
-	std::cout >> func(number);
+	std::cout << func(number);
 }
